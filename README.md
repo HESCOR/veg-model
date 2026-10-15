@@ -1,5 +1,7 @@
 # Be a vegetation modeller!
 
+[![GitHub Org](https://img.shields.io/badge/GitHub-HESCOR-blue?logo=github&logoColor=white)](https://github.com/HESCOR)
+
 A static port of the [original Shiny application](https://veg-model.shinyapps.io/shinyapp/), preserving its existing layout, labels, controls, colours, and maps.
 
 **[Open the application](https://hescor.github.io/veg-model/)**
