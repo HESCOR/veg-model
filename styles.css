@@ -1,0 +1,23 @@
+
+      body {
+        background-color: #f4f6f7;
+        font-family: 'Helvetica', sans-serif;
+      }
+      .panel {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-weight: 300;
+      }
+
+.shiny-input-container { margin-bottom: 15px; }
+.shiny-label-null { display: none; }
+#scenario-map { max-width: 100%; max-height: 100%; height: auto; }
+#map-error:empty { display:none; }
+
+.shiny-input-container:not(.shiny-input-container-inline) { width:300px; max-width:100%; }
+.shiny-input-radiogroup label ~ .shiny-options-group { margin-top: -10px; }

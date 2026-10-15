@@ -1,0 +1,4 @@
+assets/original.html
+assets/maps/*.png
+_site/
+__pycache__/

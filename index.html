@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🌍 Be a vegetation modeller!</title>
+<link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <h2>🌍 Be a vegetation modeller!</h2>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="panel">
+          <h4>🌡 change in temperature</h4>
+          <div id="temp" class="form-group shiny-input-radiogroup shiny-input-container" role="radiogroup" aria-labelledby="temp-label">
+            <label class="control-label shiny-label-null" for="temp" id="temp-label"></label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="-10"/>
+                  <span>-10</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="-5"/>
+                  <span>-5</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="-2"/>
+                  <span>-2</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="-1"/>
+                  <span>-1</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="0" checked="checked"/>
+                  <span>0</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="1"/>
+                  <span>1</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="2"/>
+                  <span>2</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="5"/>
+                  <span>5</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="temp" value="10"/>
+                  <span>10</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <h4>🌧 change in precipitation</h4>
+          <div id="prec" class="form-group shiny-input-radiogroup shiny-input-container" role="radiogroup" aria-labelledby="prec-label">
+            <label class="control-label shiny-label-null" for="prec" id="prec-label"></label>
+            <div class="shiny-options-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="-1000"/>
+                  <span>-1000</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="-750"/>
+                  <span>-750</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="-500"/>
+                  <span>-500</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="-250"/>
+                  <span>-250</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="0" checked="checked"/>
+                  <span>0</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="250"/>
+                  <span>250</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="500"/>
+                  <span>500</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="750"/>
+                  <span>750</span>
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="prec" value="1000"/>
+                  <span>1000</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <br/>
+          <strong>current scenario:</strong>
+          <div id="scenario_text" aria-live="polite">0 °C | 0 mm</div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="panel">
+          <div id="vegmap" style="width:100%;height:650px;"><img id="scenario-map" src="assets/maps/t0_p0.webp" alt="Dominant Land Cover Type — temperature change 0 °C, precipitation change 0 mm"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<p id="map-error" role="alert"></p>
+<noscript>Please enable JavaScript to change the vegetation scenario.</noscript>
+</body>
+</html>
